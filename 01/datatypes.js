@@ -19,3 +19,10 @@ let state;
 
 console.log(typeof undefined);  //undefined
 console.log(typeof null); //obj
+
+
+//primitive datatypes
+//string,number,boolean,null,undefined,bigint,symbol
+
+//non-primitive datatypes
+//array,objects,function
