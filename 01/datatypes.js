@@ -22,7 +22,7 @@ console.log(typeof null); //obj
 
 
 //primitive datatypes
-//string,number,boolean,null,undefined,bigint,symbol
+//string,number,boolean,null,undefined,bigInt,symbol
 
 //non-primitive datatypes
 //array,objects,function
