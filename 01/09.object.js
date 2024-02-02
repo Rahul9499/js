@@ -1,4 +1,4 @@
-//Object
+//Singleton
 //Object literals
 
 const mySym = Symbol["key1"]
