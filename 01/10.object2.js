@@ -16,3 +16,25 @@ console.log(Object.values(obj1));
 console.log(Object.entries(obj1));
 
 console.log(Object.hasOwnProperty('isLogged'));
+
+
+
+
+const course = {
+    coursename: "js in revision",
+    price: "1999",
+    courseinstructor: "Rahul"
+}
+
+//course.courseinstructor
+
+const {courseinstructor} = course
+console.log(courseinstructor);
+
+
+//json format in array of API
+[
+    {},
+    {},
+    {}
+]
