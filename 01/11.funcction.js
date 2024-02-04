@@ -21,4 +21,4 @@ function loginUser(username = "rahul"){
     }
     return `${username} just logged in`
 }
-console.log(loginUser("anand"));
+console.log(loginUser("Anand"));
