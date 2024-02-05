@@ -23,3 +23,14 @@ function one(){
 two()
 }
 one()
+
+
+console.log(addone(8));
+function addone(num){
+    return num + 1
+}
+
+console.log(addTwo(8)); //Hoisting (due to this it can not be executed in fn expression)
+const addTwo = function(num){
+    return num +2
+}
