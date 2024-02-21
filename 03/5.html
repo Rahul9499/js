@@ -27,5 +27,24 @@
     }
     addOptilang('Golang')
 
+    //Edit
+    const seclang = document.querySelector("li:nth-child(2)")
+    console.log(seclang);
+    //seclang.innerHTML = "Mojo"
+
+    const newLi = document.createElement('li')
+    newLi.textContent = "Mojo"
+    seclang.replaceWith(newLi)
+
+    //Edit
+    const firstLang = document.querySelector("li:first-child")
+    console.log(firstLang);
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+
+    //remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
 </script>
 </html>
