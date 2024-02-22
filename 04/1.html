@@ -7,16 +7,40 @@
 <body>
     <h2>Amazing Events</h2>
     <div>
-        <ul class="images">
+        <ul id="images">
             <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3260921/pexels-photo-3260921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="pshop" ></li>
-            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/2266350/pexels-photo-2266350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="pshop" ></li>
-            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3540186/pexels-photo-3540186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="pshop" ></li>
-            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/2773703/pexels-photo-2773703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="pshop" ></li>
+            <li><img width="200px" id="girl" src="https://images.pexels.com/photos/2266350/pexels-photo-2266350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="qshop" ></li>
+            <li><img width="200px" id="shadow" src="https://images.pexels.com/photos/3540186/pexels-photo-3540186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="rshop" ></li>
+            <li><img width="200px" id="boy" src="https://images.pexels.com/photos/2773703/pexels-photo-2773703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="sshop" ></li>
+             <li><a  href="https://www.google.co.in/" id="google">Google</a></li>
         </ul>
     </div>
-    <script>
-        document.getElementById('')
-    </script>
     
 </body>
+<script>
+    // document.getElementById('boy').onclick = function(){
+    //     alert("boy clicked")
+    // }
+
+    //attachEvent()
+    //jquery-on
+
+    //type, timestamp, preventDefault
+    //target, toElement, srcElement, currenttarget,
+    //clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftKey, keyCode
+
+    // document.getElementById('boy').addEventListener('click', function(){
+    //     alert("boy clicked again")
+    // })
+
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("image inside ul clicked");
+    }, false);
+
+    document.getElementById('boy').addEventListener('click', function(e){
+        console.log("boy clicked");
+    }, true);
+</script>
+
 </html>
