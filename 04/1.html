@@ -34,13 +34,32 @@
     //     alert("boy clicked again")
     // })
 
+    //bubbling mode
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("image inside ul clicked");
+    // }, false);
+
+    // document.getElementById('boy').addEventListener('click', function(e){
+    //     console.log("boy clicked");
+    // }, false);
+    
+    //capturing mode 
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("image inside ul clicked");
+    // }, true);
+
+    // document.getElementById('boy').addEventListener('click', function(e){
+    //     console.log("boy clicked");
+    // }, true);
+
     document.getElementById('images').addEventListener('click', function(e){
         console.log("image inside ul clicked");
     }, false);
 
     document.getElementById('boy').addEventListener('click', function(e){
         console.log("boy clicked");
-    }, true);
+        e.stopPropagation()
+    }, false);
 </script>
 
 </html>
