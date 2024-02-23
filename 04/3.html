@@ -12,11 +12,18 @@
     
 </body>
 <script>
-    const sayDate = function(str){
-        console.log(str,Date.now());
-    }
-    const intervalId = setInterval(sayDate, 1000, "Hello")
+    let intervalId;
 
-    clearInterval(intervalId)
+    const sayDate = function(str){
+        console.log(str, Date.now());
+    }
+
+    document.getElementById("start").onclick = function() {
+        intervalId = setInterval(sayDate, 1000, "Hello");
+    };
+
+    document.getElementById("stop").onclick = function() {
+        clearInterval(intervalId);
+    };
 </script>
 </html>
