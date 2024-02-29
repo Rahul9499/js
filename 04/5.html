@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
+    <script>
+        const requestUrl = ''
+        const xhr = XMLHttpRequest();
+        xhr.open('GET', requestUrl)
+        xhr.onreadystatechange = function(){
+            console.log(xhr.readyState);
+        }
+        xhr.send();
+    </script>
     
 </body>
 </html>
