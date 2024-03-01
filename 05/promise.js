@@ -28,3 +28,16 @@ const promiseTwo = new Promise(function(resolve, reject){
 promiseTwo.then(function(user){
     console.log(user);
 })
+
+const promiseThree = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        let error = true
+        if (!error) {
+            resolve({username: "Anand", password: "123"})
+        } else {
+            reject('ERROR: Something went wrong')
+        }
+    },1000)
+})
+
+promiseThree.then().catch()
