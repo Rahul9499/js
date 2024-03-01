@@ -18,3 +18,13 @@ new Promise(function(resolve, reject){
 }).then(function(){
     console.log("Async 2 resolved");
 })
+
+const promiseTwo = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        resolve({username: "Rahul", email: "rahul@gmail.com"})
+    },1000)
+})
+
+promiseTwo.then(function(user){
+    console.log(user);
+})
