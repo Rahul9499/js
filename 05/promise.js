@@ -31,7 +31,7 @@ promiseTwo.then(function(user){
 
 const promiseThree = new Promise(function(resolve, reject){
     setTimeout(function(){
-        let error = false
+        let error = true
         if (!error) {
             resolve({username: "Anand", password: "123"})
         } else {
@@ -48,3 +48,26 @@ promiseThree.then((user) => {
 }).catch(function(error){
     console.log(error);
 }).finally(() => console.log("The promise is either resolved or rejected"))
+
+const promiseFour = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        let error = true
+        if (!error) {
+            resolve({username: "javascript", password: "123"})
+        } else {
+            reject('ERROR: JS went wrong')
+        }
+    },1000)
+});
+
+async function consumePromiseFour(){
+   try {
+    const response = await promiseFour
+    console.log(response);
+   } catch (error) {
+    console.log(error);
+   }
+
+}
+
+   consumePromiseFour()
